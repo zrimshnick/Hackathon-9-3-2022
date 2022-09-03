@@ -68,8 +68,11 @@ header {
 }
 
 .navbar input {
+  font-family: "Questrial", sans-serif;
   margin-top: 2rem;
   font-size: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .class-box-section {
