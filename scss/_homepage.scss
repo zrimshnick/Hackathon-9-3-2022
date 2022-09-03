@@ -19,7 +19,7 @@ header {
   );*/
   z-index: 1;
   padding-bottom: 2rem;
-  border-bottom: $dark-line solid 1.5rem;
+  border-bottom: $dark-line solid 0.5rem;
 }
 
 .logo {
@@ -65,7 +65,7 @@ header {
   margin-bottom: 2rem;
   border: $dark-line solid 0.3rem;
   border-radius: 1rem;
-  width: 90rem;
+  width: 80%;
 }
 .class-title-and-rating {
   @include flex-col-center;
@@ -75,19 +75,22 @@ header {
 }
 .class-code {
   font-size: 2rem;
+  font-weight: bold;
 }
 .class-title {
   font-size: 2rem;
+  padding-bottom: 0.5rem;
 }
 .class-rating {
   @include flex-row-center;
+  padding-top: 0.25rem;
   font-size: 1.5rem;
 }
 .class-description {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 50%;
 }
 .class-breakdowns {
@@ -105,29 +108,46 @@ header {
 }
 .breakdown-title {
   font-size: 1.75rem;
-  padding-right: 0.5rem;
+  padding: 0.25rem;
+  padding-right: 1rem;
 }
 .breakdown-rating {
   font-size: 1.75rem;
-  padding: 0.1rem;
-  border-radius: .5rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
 }
 .hard {
-    background-color: red;
+  background-color: rgb(255, 103, 103);
 }
 .okay {
-    background-color: yellow;
+  background-color: rgb(255, 233, 69);
 }
 .easy {
-    background-color: rgb(113, 199, 113));
+  background-color: rgb(113, 199, 113);
 }
 
 .class-add-and-review {
   @include flex-col-center;
+  padding-right: 1.5rem;
 }
 .class-add-button {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: black;
+  background-color: $background-gray;
+  border-radius: 2rem;
+  border: $background-gray 0.2rem solid;
+  transition: 0.2s all ease-in-out;
+}
+.class-add-button:hover {
+  border: black 0.2rem solid;
 }
 .class-see-reviews {
   font-size: 1.5rem;
+  color: gray;
+  text-decoration: none;
 }
