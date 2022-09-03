@@ -1,0 +1,22 @@
+@import "_variables";
+@import "_homepage";
+@import "_mixins";
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html {
+  font-family: $fontv2;
+  min-height: 100%;
+}
+
+body {
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
