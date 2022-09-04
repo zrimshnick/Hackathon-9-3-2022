@@ -14,11 +14,11 @@
   </head>
   <body>
     <header class="container">
-      <div class="logo">
-        <!--         <a href="/index.html"> <img src="img/microsoft-logo.png" /></a> -->
-        Sphinx
-      </div>
+      <div class="logo">Sphinx</div>
       <div class="navbar">
+        <div class="class-counter">
+          Classes Added:&nbsp;<span id="class-counter">0</span>
+        </div>
         <input type="text" placeholder="Search for a class..." />
       </div>
     </header>
@@ -62,7 +62,12 @@
           </div>
         </div>
         <div class="class-add-and-review">
-          <a href="#addclass" class="class-add-button">Add</a>
+          <a
+            onclick="increment(this);"
+            href="#addclass"
+            class="class-add-button"
+            >Add</a
+          >
           <a href="#reviews" class="class-see-reviews">See Reviews</a>
         </div>
       </div>
@@ -105,7 +110,12 @@
           </div>
         </div>
         <div class="class-add-and-review">
-          <a href="#addclass" class="class-add-button">Add</a>
+          <a
+            onclick="increment(this);"
+            href="#addclass"
+            class="class-add-button"
+            >Add</a
+          >
           <a href="#reviews" class="class-see-reviews">See Reviews</a>
         </div>
       </div>
@@ -148,7 +158,12 @@
           </div>
         </div>
         <div class="class-add-and-review">
-          <a href="#addclass" class="class-add-button">Add</a>
+          <a
+            onclick="increment(this);"
+            href="#addclass"
+            class="class-add-button"
+            >Add</a
+          >
           <a href="#reviews" class="class-see-reviews">See Reviews</a>
         </div>
       </div>
@@ -191,7 +206,12 @@
           </div>
         </div>
         <div class="class-add-and-review">
-          <a href="#addclass" class="class-add-button">Add</a>
+          <a
+            onclick="increment(this);"
+            href="#addclass"
+            class="class-add-button"
+            >Add</a
+          >
           <a href="#reviews" class="class-see-reviews">See Reviews</a>
         </div>
       </div>
@@ -234,7 +254,12 @@
           </div>
         </div>
         <div class="class-add-and-review">
-          <a href="#addclass" class="class-add-button">Add</a>
+          <a
+            onclick="increment(this);"
+            href="#addclass"
+            class="class-add-button"
+            >Add</a
+          >
           <a href="#reviews" class="class-see-reviews">See Reviews</a>
         </div>
       </div>
@@ -277,10 +302,37 @@
           </div>
         </div>
         <div class="class-add-and-review">
-          <a href="#addclass" class="class-add-button">Add</a>
+          <a
+            onclick="increment(this);"
+            href="#addclass"
+            class="class-add-button"
+            >Add</a
+          >
           <a href="#reviews" class="class-see-reviews">See Reviews</a>
         </div>
       </div>
     </section>
   </body>
 </html>
+
+<script>
+  function increment(obj) {
+    if (obj.innerHTML == "Remove") {
+      obj.innerHTML = "Add";
+      obj.style.backgroundColor = "#a6a6a6";
+      document.getElementById("class-counter").innerHTML =
+        parseInt(document.getElementById("class-counter").innerHTML) - 1;
+    } else {
+      obj.innerHTML = "Remove";
+      obj.style.backgroundColor = "rgb(255, 106, 106)";
+      document.getElementById("class-counter").innerHTML =
+        parseInt(document.getElementById("class-counter").innerHTML) + 1;
+    }
+  }
+</script>
+
+<style>
+  #class-counter {
+    font-size: 20px;
+  }
+</style>
