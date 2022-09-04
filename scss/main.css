@@ -152,12 +152,55 @@ header {
   font-size: 1.5rem;
 }
 
+.star {
+  width: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.class-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
 .class-description {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   text-align: left;
   font-size: 1.8rem;
-  width: 50%;
+}
+
+.see-more-button-container {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.see-more-button {
+  width: 2rem;
+  text-align: center;
+  border: #a6a6a6 0.2rem solid;
+  border-radius: 4rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.see-more-button:hover {
+  border-color: black;
 }
 
 .class-breakdowns {
