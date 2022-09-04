@@ -19,7 +19,7 @@ header {
   );*/
   z-index: 1;
   padding-bottom: 2rem;
-  border-bottom: $dark-line solid 0.5rem;
+  border-bottom: $dark-line solid 0.3rem;
 }
 
 .logo {
@@ -62,6 +62,7 @@ header {
 
 .class-box {
   @include flex-row-center;
+  background-color: white;
   justify-content: space-between;
   padding: 1rem;
   margin: 1rem;
