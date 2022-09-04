@@ -295,6 +295,71 @@ header {
   text-decoration: none;
 }
 
+.entire-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.find-school-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  width: 50%;
+  background-color: white;
+}
+
+.find-school-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+}
+
+.find-school-search-bar {
+  margin: 2rem;
+  font-size: 3rem;
+  padding: 0.3rem;
+  font-family: "Questrial", sans-serif;
+  border: black 0.2rem solid;
+  border-radius: 0.5rem;
+  width: 45rem;
+}
+
+.enter-button {
+  padding: 0.7rem;
+  color: white;
+  background-color: #282828;
+  border: #282828 0.2rem solid;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
 html,
 body,
 * {
