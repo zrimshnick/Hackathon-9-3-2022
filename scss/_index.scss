@@ -5,9 +5,55 @@
   @include flex-col-center;
 }
 
+.notice-container {
+  @include flex-col-center;
+  margin-top: 15rem;
+  width: 60rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.notice-header {
+  @include flex-row-center;
+  text-align: center;
+  font-size: 4rem;
+}
+.notice-header h1 {
+  font-weight: lighter;
+}
+#notice-text-button {
+  border: transparent 0.2rem solid;
+  border-radius: 3rem;
+  transition: 0.2s all ease-in-out;
+  margin-left: 1rem;
+}
+#notice-text-button img {
+  width: 2rem;
+}
+
+#notice-text-button:hover {
+  border: $dark-line solid 0.2rem;
+  border-radius: 3rem;
+}
+
+.notice-text {
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.flip {
+  transform: rotate(180deg);
+}
+.hidden {
+  display: none;
+}
+
 .find-school-container {
   @include flex-col-center;
-  margin-top: 20rem;
+  margin-top: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   border-radius: 1rem;

@@ -18,6 +18,14 @@
       <div class="logo">Sphinx</div>
     </header>
     <section class="entire-container">
+      <div class="notice-container">
+        <div class="notice-header">
+          <h1>Thanks for visiting Sphinx!</h1>
+          <a href="#see-more" id="notice-text-button" onclick="toggleClass()" class=""><img src="/img/Keyboard arrow downdropdown.png"
+            ></a>
+        </div>
+        <div id="notice-text" class="notice-text hidden">The site is currently in early stages of development, with functionality and design being improved upon. The goal is to create a site where students can easily learn about potential courses, and register for classes. Students can also leave reviews and ratings about prior classes.</div>
+      </div>
       <section class="find-school-container">
         <div class="find-school-description">
           Find your school!
@@ -26,7 +34,6 @@
             type="text"
             placeholder="Please enter school name..."
           />
-
         </div>
         <a href="classes.html" class="enter-button">
           Enter
@@ -35,3 +42,12 @@
     </section>
   </body>
 </html>
+
+<script>
+  var elem = document.getElementById("notice-text");
+  var button = document.getElementById("notice-text-button");
+  function toggleClass() {
+    elem.classList.toggle("hidden");
+    button.classList.toggle("flip");
+  }
+</script>

@@ -315,6 +315,78 @@ header {
           align-items: center;
 }
 
+.notice-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15rem;
+  width: 60rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.notice-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.notice-header h1 {
+  font-weight: lighter;
+}
+
+#notice-text-button {
+  border: transparent 0.2rem solid;
+  border-radius: 3rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  margin-left: 1rem;
+}
+
+#notice-text-button img {
+  width: 2rem;
+}
+
+#notice-text-button:hover {
+  border: #282828 solid 0.2rem;
+  border-radius: 3rem;
+}
+
+.notice-text {
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+.flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
 .find-school-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,7 +398,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20rem;
+  margin-top: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   border-radius: 1rem;
